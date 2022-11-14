@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+
+        <nav>
+            <h1>abc</h1>
+            <div class="navbar" id="navvbar">
+                <i class="fa fa-xmark" onclick="hide()"></i>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="show()"></i>
+        </nav>
+        
+        <div class="text-box">
+            
+            <!-- <img src="assets/aaa.jpg" alt="" srcset=""> -->
+            <h1>Hey I'm Sunas</h1>
+            <p>Python Full Stack Developer</p>
+        </div>
+  </div>
+
+  <script>
+        var navvbar = document.getElementById("navvbar");
+
+        function hide(){
+            navvbar.style.right = "-200px";
+        }
+        function show(){
+            navvbar.style.right = "0";
+        }
+  </script>
+</body>
+</html>
