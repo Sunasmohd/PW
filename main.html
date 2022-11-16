@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-  <div class="container">
+    <div class="container">
 
         <nav>
             <h1>abc</h1>
@@ -18,30 +21,102 @@
                 <i class="fa fa-xmark" onclick="hide()"></i>
                 <ul>
                     <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="show()"></i>
         </nav>
-        
+
         <div class="text-box">
-            
+
             <!-- <img src="assets/aaa.jpg" alt="" srcset=""> -->
             <h1>Hey I'm Sunas</h1>
             <p>Python Full Stack Developer</p>
         </div>
-  </div>
+    </div>
+    <section class="about" id="about">
+        <div class="contents">
+            <div class="inline">
+                <h1>About</h1>
+                <p>Me</p>
+            </div>
+            <p class="about-2">Creative and Detail Oriented Full Stack Developer, Armed with Great Understanding of
+                Frontend and Backend Development. Looking to Enhance my Professional Experience with an IT Company
+                Specializing in Web & Application Development.</p>
+        </div>
 
-  <script>
+        <div class="education-1">
+            <div class="col-1">
+
+                <i class="fa fa-calendar"></i>
+                <span>June 2014-2017</span>
+
+                <h1>High School</h1>
+                <p>CHM HSS</p>
+
+            </div>
+            <div class="col-1">
+
+                <i class="fa fa-calendar"></i>
+                <span>July 2017-2019</span>
+
+                <h1>Pre Degree</h1>
+                <p>Thottada HSS</p>
+
+
+            </div>
+        </div>
+        <div class="education-2">
+            <div class="col-2">
+
+                <i class="fa fa-calendar"></i>
+                <span>June 2019-2022</span>
+                <h1>UG Degree</h1>
+                <p>Jamia Hamdard</p>
+
+
+            </div>
+            <div class="col-2">
+
+                <i class="fa fa-calendar"></i>
+                <span>June 2022-present</span>
+            
+                <h1>Internship</h1>
+                <p>Quest Innovative Solutions</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="contact" id="contact">
+            <h1>Contact</h1>
+            <div class="form">
+                <form action="#contact">
+                    <input type="text" placeholder="Your Name">
+                    <input type="text" placeholder="Your Email">
+                    <input type="text" placeholder="Your Phone">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <button>Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- -------------------JavaScript------------------ -->
+    <script>
         var navvbar = document.getElementById("navvbar");
 
-        function hide(){
+        function hide() {
             navvbar.style.right = "-200px";
+
         }
-        function show(){
+        function show() {
             navvbar.style.right = "0";
         }
-  </script>
+    </script>
 </body>
+
 </html>
